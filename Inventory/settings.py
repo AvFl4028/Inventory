@@ -31,12 +31,14 @@ ALLOWED_HOSTS = ["inventory-production.up.railway.app", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "reactpy_django",
     'website'
 ]
 
@@ -69,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Inventory.wsgi.application'
+ASGI_APPLICATION = "Inventory.asgi.application"
 
 
 # Database
